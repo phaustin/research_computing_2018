@@ -31,9 +31,19 @@ href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min
         <link href="./static/custom.css" rel="stylesheet">
 
  <style>
-.masthead {
+#banner {
     background-image:url("./static/trajectories.jpg");
 }
+#banner .copy {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
+    display: inline;
+    float: left;
+    max-width: 600px;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
 </style>
 
 </head>
@@ -67,14 +77,12 @@ href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min
 </nav>
 
 <!-- Full Page Image Header with Vertically Centered Content -->
-<header class="masthead">
+<header id="banner">
   <div class="container h-100">
-    <div class="row h-100 align-items-center">
-      <div class="col-12 text-center">
-        <h1 class="font-weight-light">Vertically Centered Masthead Content</h1>
-        <p class="lead">A great starter layout for a landing page</p>
-      </div>
-    </div>
+       <div class="copy">
+                        <h1>Research Computing in Earth Sciences</h1>
+                                <p class="intro">Fall 2018 | Columbia University Department of Earth and Environmental Sciences</p>
+         </div>
   </div>
 </header>
 
