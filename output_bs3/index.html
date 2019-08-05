@@ -30,20 +30,43 @@ href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min
     <link rel="stylesheet" href="./theme/css/style.css" type="text/css"/>
         <link href="./static/custom.css" rel="stylesheet">
 
- <style>
+<style>
+body {
+    padding-top: 70px;
+}
+
 #banner {
     background-image:url("./static/trajectories.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: scroll;
+    background-size: cover;
+    background-color: #C4C4C4;
+    margin: 0 0 20px;
+    padding: 70px 0; /*controls padding around inner text*/
+    position: relative;
 }
 #banner .copy {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
-    display: inline;
+    display: inline-block;
     float: left;
     max-width: 600px;
-    padding: 20px;
+    padding: 15px;
     position: relative;
     z-index: 1;
+    top: 40%;
 }
 
+#banner h1 {
+    color: #fff;
+    font-family: "HelveticaNeue-CondensedBold","Helvetica Neue CE 600 Condensed","Helvetica Neue LT Condensed","Helvetica Neue 600 Condensed","HelveticaNeue-BoldCondensed","Helvetica Neue BoldCondensed","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 30px;
+    font-stretch: condensed;
+    font-weight: 700;
+    line-height: 0.9;
+    margin: 0;
+    text-transform: uppercase;
+}
 </style>
 
 </head>
@@ -78,10 +101,10 @@ href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min
 
 <!-- Full Page Image Header with Vertically Centered Content -->
 <header id="banner">
-  <div class="container h-100">
+  <div class="container">
        <div class="copy">
                         <h1>Research Computing in Earth Sciences</h1>
-                                <p class="intro">Fall 2018 | Columbia University Department of Earth and Environmental Sciences</p>
+                        <p class="intro">Fall 2018 | Columbia University Department of Earth and Environmental Sciences</p>
          </div>
   </div>
 </header>
