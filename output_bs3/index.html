@@ -20,609 +20,73 @@
         <meta property="og:description" content="Research Computing in Earth Sciences"/>
 
 
-    <!-- Bootstrap -->
-            
-        <link rel="stylesheet" href="./theme/css/bootstrap.lumen.min.css" type="text/css"/>
-    <link href="./theme/css/font-awesome.min.css" rel="stylesheet">
+ <!-- Bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<link rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link href="./theme/css/pygments/default.css" rel="stylesheet">
     <link rel="stylesheet" href="./theme/css/style.css" type="text/css"/>
         <link href="./static/custom.css" rel="stylesheet">
 
-
-
-
+ <style>
+.masthead {
+    background-image:url("./static/trajectories.jpg");
+}
+</style>
 
 </head>
 <body>
-
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-	<div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="./" class="navbar-brand">
-Research Computing in Earth Sciences            </a>
-        </div>
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav">
-                         <li><a href="./pages/final-project.html">
-                             Final Project
-                          </a></li>
-                         <li><a href="./pages/jupyterhub.html">
-                             JupyterHub
-                          </a></li>
-                         <li><a href="./pages/schedule.html">
-                             Schedule
-                          </a></li>
-                         <li><a href="./pages/syllabus.html">
-                             Syllabus
-                          </a></li>
-                        <li >
-                            <a href="./category/assignments.html">Assignments</a>
-                        </li>
-                        <li >
-                            <a href="./category/lectures.html">Lectures</a>
-                        </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Start Bootstrap</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
     </div>
-</div> <!-- /.navbar -->
-<!-- Banner -->
-<style>
-	#banner{
-	    background-image:url("./static/trajectories.jpg");
-	}
-</style>
+  </div>
+</nav>
 
-<div id="banner">
-	<div class="container">
-		<div class="copy">
-			<h1>Research Computing in Earth Sciences</h1>
-				<p class="intro">Fall 2018 | Columbia University Department of Earth and Environmental Sciences</p>
-		</div>
-	</div>
-</div><!-- End Banner -->
-<div class="container">
-    <div class="row">
-        <div class="col-sm-9">
-            <article>
-                <h2><a href="./xarray-tips-and-tricks.html">Xarray Tips and Tricks</a></h2>
-                <div class="summary">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Xarray-Tips-and-Tricks">Xarray Tips and Tricks<a class="anchor-link" href="#Xarray-Tips-and-Tricks">¶</a></h1>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Build-a-multi-file-dataset-from-an-OpenDAP-server">Build a multi-file dataset from an OpenDAP server<a class="anchor-link" href="#Build-a-multi-file-dataset-from-an-OpenDAP-server">¶</a></h2><p>One thing we love about xarray is the <code>open_mfdataset</code> function, which combines many netCDF files into a single xarray Dataset.</p>
-<p>But what if the files are stored on a remote server and accessed over OpenDAP. An example can be found in NOAA's NCEP Reanalysis catalog.</p>
-                    <a class="btn btn-default btn-xs" href="./xarray-tips-and-tricks.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./binder.html">Binder for Reproducible Research</a></h2>
-                <div class="summary">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Binder-for-Reproducible-Research">Binder for Reproducible Research<a class="anchor-link" href="#Binder-for-Reproducible-Research">¶</a></h1><p>This final lesson is concerned with the topic of reproducibility.
-Nearly everyone agrees that reproducibility is an important principle for science:
-if results are not reproducible, they are not valid.</p>
-<p>But how do we achieve reproducibility in practice?
-In computational / data science, a particular analysis, calculation, or notebook may depend on hundreds of different software packages, each with many different versions.
-Reproducibility of our results depends on having the correct version.</p>
-                    <a class="btn btn-default btn-xs" href="./binder.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./assignment-10-maps-with-cartopy.html">Assignment 10: Maps with Cartopy</a></h2>
-                <div class="summary">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Homework-10:-Cartopy">Homework 10: Cartopy<a class="anchor-link" href="#Homework-10:-Cartopy">¶</a></h1><h3 id="1)-Plot-data-from-NARR">1) Plot data from NARR<a class="anchor-link" href="#1)-Plot-data-from-NARR">¶</a></h3><p>NARR is NCEP's <a href="https://www.esrl.noaa.gov/psd/data/gridded/data.narr.html">North American Regional Reanalysis</a>, a widely used product for studying the weather and climate of the continental US. The data is available from NOAA's <a href="https://www.esrl.noaa.gov/">Earth System Research Laboratory</a> via <a href="https://en.wikipedia.org/wiki/OPeNDAP">OPeNDAP</a>, meaing that xarray can opent the data "remotely" without downloading a file.</p>
-                    <a class="btn btn-default btn-xs" href="./assignment-10-maps-with-cartopy.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./maps-with-cartopy.html">Maps with Cartopy</a></h2>
-                <div class="summary">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Maps-in-Scientific-Python">Maps in Scientific Python<a class="anchor-link" href="#Maps-in-Scientific-Python">¶</a></h1><p>Making maps is a fundamental part of geoscience research.
-Maps differ from regular figures in the following principle ways:</p>
-<ul>
-<li>Maps require a <em>projection</em> of geographic coordinates on the 3D Earth to the 2D space of your figure.</li>
-<li>Maps often include extra decorations besides just our data (e.g. continents, country borders, etc.)</li>
-                    <a class="btn btn-default btn-xs" href="./maps-with-cartopy.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./assignment-9-performance-and-profiling.html">Assignment 9: Performance and Profiling</a></h2>
-                <div class="summary">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Speed,-Performance,-and-Profiling-in-Python">Speed, Performance, and Profiling in Python<a class="anchor-link" href="#Speed,-Performance,-and-Profiling-in-Python">¶</a></h1><h3 id="1)-Write-a-function-to-find-the-maximum-of-a-list-of-numbers-using-pure-core-python-(no-numpy)">1) Write a function to find the maximum of a list of numbers using <em>pure core python</em> (no numpy)<a class="anchor-link" href="#1)-Write-a-function-to-find-the-maximum-of-a-list-of-numbers-using-pure-core-python-(no-numpy)">¶</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-                    <a class="btn btn-default btn-xs" href="./assignment-9-performance-and-profiling.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./dask-for-parallel-computing-and-big-data.html">Dask for Parallel Computing and Big Data</a></h2>
-                <div class="summary">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Dask-for-Parallel-Computing-in-Python">Dask for Parallel Computing in Python<a class="anchor-link" href="#Dask-for-Parallel-Computing-in-Python">¶</a></h1><p>In past lectures, we learned how to use numpy, pandas, and xarray to analyze various types of geoscience data.
-In this lecture, we address an incresingly common problem: what happens if the data we wish to analyze is "big data"</p>
-<h3 id='Aside:-What-is-"Big-Data"?'>Aside: What is "Big Data"?<a class="anchor-link" href='#Aside:-What-is-"Big-Data"?'>¶</a></h3><p>There is a lot of hype around the buzzword "big data" today.
-Some people may associate "big data" with specific sortware platforms (e.g. "Hadoop", "spark"), while, for others, "big data" means specific machine learning techniques.
-But I think <a href="https://en.wikipedia.org/wiki/Big_data">wikipedia's definition</a>
-                    <a class="btn btn-default btn-xs" href="./dask-for-parallel-computing-and-big-data.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./python-environments.html">Python Environments</a></h2>
-                <div class="summary"><p><em>Note: many elements in this guide are adapted from
-<a href="http://danielrothenberg.com/">Daniel Rothenberg</a>'s
-excellent
-<a href="http://danielrothenberg.com/gcpy/getting_started.html">getting started guide</a>.</em></p>
-<h2>Python</h2>
-<p>Python and nearly all of the software packages in the scientific python
-ecosystem are <a href="https://opensource.org/">open-source</a>.
-They are maintained and developed by a community of scientists and programmers,
-some of whose work is supported …</p>
-                    <a class="btn btn-default btn-xs" href="./python-environments.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./assignment-8-xarray-for-enso.html">Assignment 8: Xarray for ENSO</a></h2>
-                <div class="summary">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Assignment-8-:-Xarray-Groupby">Assignment 8 : Xarray Groupby<a class="anchor-link" href="#Assignment-8-:-Xarray-Groupby">¶</a></h1><p>Here will will calculate the NINO 3.4 index of El Nino variabillity and use it to analyze datasets.</p>
-<p>First read <a href="https://www.ncdc.noaa.gov/teleconnections/enso/indicators/sst">this page from NOAA</a>. It tells you the following.</p>
-<ul>
-<li>The Nino 3.4 region is defined as the region between +/- 5 deg. lat, 170 W - 120 W lon.</li>
-                    <a class="btn btn-default btn-xs" href="./assignment-8-xarray-for-enso.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./intermediate-xarray.html">Intermediate Xarray</a></h2>
-                <div class="summary">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-                    <a class="btn btn-default btn-xs" href="./intermediate-xarray.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./assignment-7-xarray-fundamentals.html">Assignment 7: Xarray Fundamentals</a></h2>
-                <div class="summary">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Assignment-7-:-Xarray">Assignment 7 : Xarray<a class="anchor-link" href="#Assignment-7-:-Xarray">¶</a></h1><p>In this assignment, we will use Xarray to analyze top-of-atmosphere radiation data from <a href="https://eosweb.larc.nasa.gov/project/ceres/ceres_table">NASA's CERES project</a>.</p>
-<p><img alt="radiation budget" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/The-NASA-Earth%27s-Energy-Budget-Poster-Radiant-Energy-System-satellite-infrared-radiation-fluxes.jpg" />
-<em>Public domain, by NASA, from Wikimedia Commons</em></p>
-<p>I have pre-downloaded and subsetted a portion of this dataset for use in our class. You can download it here:
-<a href="http://ldeo.columbia.edu/~rpa/CERES_EBAF-TOA_Edition4.0_200003-201701.condensed.nc">http://ldeo.columbia.edu/~rpa/CERES_EBAF-TOA_Edition4.0_200003-201701.condensed.nc</a>. The size of the data file is 702.53 MB. It will take a minute or two to download.</p>
-                    <a class="btn btn-default btn-xs" href="./assignment-7-xarray-fundamentals.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./xarray.html">Xarray Fundamentals</a></h2>
-                <div class="summary">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Xarray-for-multidimensional-gridded-data">Xarray for multidimensional gridded data<a class="anchor-link" href="#Xarray-for-multidimensional-gridded-data">¶</a></h1><p>In last week's lecture, we saw how Pandas provided a way to keep track of additional "metadata" surrounding tabular datasets, including "indexes" for each row and labels for each column. These features, together with Pandas' many useful routines for all kinds of data munging and analysis, have made Pandas one of the most popular python packages in the world.</p>
-                    <a class="btn btn-default btn-xs" href="./xarray.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./assignment-6-pandas-groupby.html">Assignment 6: Pandas Groupby</a></h2>
-                <div class="summary">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Assignment-6:-Pandas-Groupby-with-Hurricane-Data">Assignment 6: Pandas Groupby with Hurricane Data<a class="anchor-link" href="#Assignment-6:-Pandas-Groupby-with-Hurricane-Data">¶</a></h1>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Import pandas and matplotlib</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-                    <a class="btn btn-default btn-xs" href="./assignment-6-pandas-groupby.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./pandas-groupby.html">Groupby in Pandas</a></h2>
-                <div class="summary">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Pandas:-Groupby">Pandas: Groupby<a class="anchor-link" href="#Pandas:-Groupby">¶</a></h1><p><code>groupby</code> is an amazingly powerful function in pandas. But it is also complicated to use and understand.
-The point of this lesson is to make you feel confident in using <code>groupby</code> and its cousins, <code>resample</code> and <code>rolling</code>.</p>
-<p>These notes are loosely based on the <a href="http://pandas.pydata.org/pandas-docs/stable/groupby.html">Pandas GroupBy Documentation</a>.</p>
-<p>Imports:</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-                    <a class="btn btn-default btn-xs" href="./pandas-groupby.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./assignment-5-pandas.html">Assignment 5: Pandas</a></h2>
-                <div class="summary">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-                    <a class="btn btn-default btn-xs" href="./assignment-5-pandas.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./pandas.html">Pandas for Tabular Data</a></h2>
-                <div class="summary">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Pandas">Pandas<a class="anchor-link" href="#Pandas">¶</a></h1><p><a href="http://pandas.pydata.org/">Pandas</a> is a an open source library providing high-performance, easy-to-use data structures and data analysis tools. Pandas is particularly suited to the analysis of <em>tabular</em> data, i.e. data that can can go into a table. In other words, if you can imagine the data in an Excel spreadsheet, then Pandas is the tool for the job.</p>
-                    <a class="btn btn-default btn-xs" href="./pandas.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./assignment-4-more-matplotlib.html">Assignment 4: More Matplotlib</a></h2>
-                <div class="summary">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Assignment-4:-More-Matplotlib">Assignment 4: More Matplotlib<a class="anchor-link" href="#Assignment-4:-More-Matplotlib">¶</a></h1><p>The goal here is to replicate the figures you see as closely as possible.</p>
-<p>In order to get some data, you will have to run the code in the cells below. <strong>Don't worry about how this code works.</strong> In the end, it will give you some numpy arrays, which you will use in your plots. You are not allowed to use any packages other than numpy and matplotlib to complete your assignment.</p>
-                    <a class="btn btn-default btn-xs" href="./assignment-4-more-matplotlib.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./more-matplotlib.html">More Matplotlib</a></h2>
-                <div class="summary">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="More-Matplotlib">More Matplotlib<a class="anchor-link" href="#More-Matplotlib">¶</a></h1><p>Matplotlib is the dominant plotting / visualization package in python. It is important to learn to use it well. In the last lecture, we saw some basic examples in the context of learning numpy. This week, we dive much deeper. The goal is to understand how matplotlib represents figures internally.</p>
-                    <a class="btn btn-default btn-xs" href="./more-matplotlib.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./assignment-3-numpy-and-matplotlib.html">Assignment 3 - Numpy and Matplotlib</a></h2>
-                <div class="summary">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Assignment-3---Numpy-and-Matplotlib">Assignment 3 - Numpy and Matplotlib<a class="anchor-link" href="#Assignment-3---Numpy-and-Matplotlib">¶</a></h1><h3 id="Due-Thursday-September-27">Due Thursday September 27<a class="anchor-link" href="#Due-Thursday-September-27">¶</a></h3><h2 id="1-Creating-and-Manipulating-Arrays">1 Creating and Manipulating Arrays<a class="anchor-link" href="#1-Creating-and-Manipulating-Arrays">¶</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>First import numpy and matplotlib</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-                    <a class="btn btn-default btn-xs" href="./assignment-3-numpy-and-matplotlib.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./numpy-and-matplotlib.html">Numpy and Matplotlib</a></h2>
-                <div class="summary">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Numpy-and-Matplotlib">Numpy and Matplotlib<a class="anchor-link" href="#Numpy-and-Matplotlib">¶</a></h1><p>These are two of the most fundamental parts of the scientific python "ecosystem". Most everything else is built on top of them.</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-                    <a class="btn btn-default btn-xs" href="./numpy-and-matplotlib.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./assignment-2-python-functions-classes-and-modules.html">Assignment 2: Python Functions, Classes, and Modules</a></h2>
-                <div class="summary">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Assignment-2:-Python-Functions-and-Classes">Assignment 2: Python Functions and Classes<a class="anchor-link" href="#Assignment-2:-Python-Functions-and-Classes">¶</a></h1><h2 id="Part-I:-Exploring-the-Python-Standard-Library">Part I: Exploring the Python Standard Library<a class="anchor-link" href="#Part-I:-Exploring-the-Python-Standard-Library">¶</a></h2><p>Skim the <a href="https://docs.python.org/3/library/datetime.html">documentation for the datetime module</a></p>
-<h3 id="1.-Import-the-datetime-module">1. Import the <code>datetime</code> module<a class="anchor-link" href="#1.-Import-the-datetime-module">¶</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-                    <a class="btn btn-default btn-xs" href="./assignment-2-python-functions-classes-and-modules.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./functions-classes-and-modules.html">Functions, Classes, and Modules</a></h2>
-                <div class="summary">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Python-Functions,-Classes,-and-Modules">Python Functions, Classes, and Modules<a class="anchor-link" href="#Python-Functions,-Classes,-and-Modules">¶</a></h1><p>For longer and more complex tasks, it is important to organize your code into reuseable elements.
-For example, if you find yourself cutting and pasting the same or similar lines of code over and over,
-you probably need to define a <em>function</em> to encapsulate that code and make it reusable.
-An important principle in programming in <strong>DRY</strong>
-                    <a class="btn btn-default btn-xs" href="./functions-classes-and-modules.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./assignment-1-unix-git-basic-python.html">Assignment 1: Unix, Git, Basic Python</a></h2>
-                <div class="summary">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Assignment-1">Assignment 1<a class="anchor-link" href="#Assignment-1">¶</a></h1><h2 id="Part-1:-Files,-Git,-GitHub">Part 1: Files, Git, GitHub<a class="anchor-link" href="#Part-1:-Files,-Git,-GitHub">¶</a></h2><p>Use JupyterLab to launch a terminal and use the terminal to do the following tasks:</p>
-<ol>
-<li>Create a new directory called <code>resume</code> within your home directory</li>
-<li>Create an empty file within this directory called <code>Readme.md</code></li>
-</ol>
-<p>Now use JupyterLab to edit the file:</p>
-<ol>
-<li>Navigate to the directory in the file browser</li>
-                    <a class="btn btn-default btn-xs" href="./assignment-1-unix-git-basic-python.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./intro-to-git.html">Intro to Git</a></h2>
-                <div class="summary"><p>Introduction to version control with Git</p>
-                    <a class="btn btn-default btn-xs" href="./intro-to-git.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./intro-to-unix.html">Intro to Unix</a></h2>
-                <div class="summary"><p>Introduction to basic Unix commands and the file system</p>
-                    <a class="btn btn-default btn-xs" href="./intro-to-unix.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./introduction-to-jupyterlab.html">Introduction to JupyterLab</a></h2>
-                <div class="summary"><p><a href="https://jupyterlab.readthedocs.io">JupyterLab</a> will be our primary method for
-interacting with the computer. JupyterLab contains a complete environment for
-interactive scientific computing which runs in your web browser. Jupyter is an
-open source python project that was started by scientists like yourselves who
-wanted a more effective way to interact with their …</p>
-                    <a class="btn btn-default btn-xs" href="./introduction-to-jupyterlab.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./introduction-to-python.html">Introduction to Python</a></h2>
-                <div class="summary">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Core-Python-Language">Core Python Language<a class="anchor-link" href="#Core-Python-Language">¶</a></h1><p>Mostly copied from the <a href="https://docs.python.org/3/tutorial/">official python tutorial</a></p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Invoking-Python">Invoking Python<a class="anchor-link" href="#Invoking-Python">¶</a></h2><p>There are three main ways to use python.</p>
-<ol>
-<li>By running a python file, e.g. <code>python myscript.py</code></li>
-<li>Through an interactive console (python interpreter or ipython shell)</li>
-<li>In an interactive iPython notebook</li>
-</ol>
-<p>We will be using the iPython notebook.</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Python-Versions">Python Versions<a class="anchor-link" href="#Python-Versions">¶</a></h2><p>There are two versions of the python language out there: python 2 and python 3. Python 2 is more common in the wild but is depracated. The community is moving to python 3. As new python learners, you should learn python 3. But it is important to be aware that python 2 exists. It is possible that a package you want to use is only supported in python 2. In general, it is pretty easy to switch between then.</p>
-                    <a class="btn btn-default btn-xs" href="./introduction-to-python.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./course-introduction.html">Course Introduction</a></h2>
-                <div class="summary"><p>Here is the Keynote presentation given on the first day of class:</p>
-<script async class="speakerdeck-embed" data-id="2fdb253ed5e94e409c46fd6e166cf0e7" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
-                    <a class="btn btn-default btn-xs" href="./course-introduction.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-
-        </div>
-        <div class="col-sm-3" id="sidebar">
-            <aside>
-<!-- Sidebar -->
-<section class="well well-sm">
-  <ul class="list-group list-group-flush">
-
-<!-- Sidebar/Recent Posts -->
-<li class="list-group-item">
-  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
-  <ul class="list-group" id="recentposts">
-    <li class="list-group-item"><a href="./xarray-tips-and-tricks.html">Xarray Tips and Tricks</a></li>
-    <li class="list-group-item"><a href="./binder.html">Binder for Reproducible Research</a></li>
-    <li class="list-group-item"><a href="./assignment-10-maps-with-cartopy.html">Assignment 10: Maps with Cartopy</a></li>
-    <li class="list-group-item"><a href="./maps-with-cartopy.html">Maps with Cartopy</a></li>
-    <li class="list-group-item"><a href="./assignment-9-performance-and-profiling.html">Assignment 9: Performance and Profiling</a></li>
-    <li class="list-group-item"><a href="./dask-for-parallel-computing-and-big-data.html">Dask for Parallel Computing and Big Data</a></li>
-    <li class="list-group-item"><a href="./python-environments.html">Python Environments</a></li>
-    <li class="list-group-item"><a href="./assignment-8-xarray-for-enso.html">Assignment 8: Xarray for ENSO</a></li>
-    <li class="list-group-item"><a href="./intermediate-xarray.html">Intermediate Xarray</a></li>
-    <li class="list-group-item"><a href="./assignment-7-xarray-fundamentals.html">Assignment 7: Xarray Fundamentals</a></li>
-  </ul>
-</li>
-<!-- End Sidebar/Recent Posts -->
-
-<!-- Sidebar/Tag Cloud -->
-<li class="list-group-item">
-  <a href="./"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
-  <ul class="list-group " id="tags">
-    <li class="list-group-item tag-1">
-      <a href="./tag/programming.html">programming</a>
-    </li>
-    <li class="list-group-item tag-1">
-      <a href="./tag/xarray.html">xarray</a>
-    </li>
-    <li class="list-group-item tag-1">
-      <a href="./tag/python.html">python</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="./tag/pandas.html">pandas</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="./tag/numpy.html">numpy</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="./tag/matplotlib.html">matplotlib</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="./tag/classes.html">classes</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="./tag/cartopy.html">cartopy</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="./tag/visualization.html">visualization</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="./tag/dask.html">dask</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="./tag/git.html">git</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="./tag/functions.html">functions</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="./tag/unix.html">unix</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="./tag/jupyter.html">Jupyter</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="./tag/version-control.html">version control</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="./tag/shell.html">shell</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="./tag/conda.html">conda</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="./tag/bash.html">bash</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="./tag/assignment.html">assignment</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="./tag/binder.html">binder</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="./tag/file-system.html">file system</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="./tag/environments.html">environments</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="./tag/github.html">github</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="./tag/modules.html">modules</a>
-    </li>
-  </ul>
-</li>
-<!-- End Sidebar/Tag Cloud -->
-  </ul>
-</section>
-<!-- End Sidebar -->            </aside>
-        </div>
-    </div>
-</div>
-<footer>
-   <div class="container">
-      <hr>
-      <div class="row">
-         <div class="col-xs-10">&copy; 2018 Ryan Abernathey
-            &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
-            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
-            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>                <p><small>  <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/deed.en"><img alt="Creative Commons License" style="border-width:0" src="//i.creativecommons.org/l/by-nc/4.0/80x15.png" /></a>
-    Content
-  licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/deed.en">Creative Commons Attribution-NonCommercial 4.0 International License</a>, except where indicated otherwise.
-</small></p>
-         </div>
-         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+<!-- Full Page Image Header with Vertically Centered Content -->
+<header class="masthead">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-12 text-center">
+        <h1 class="font-weight-light">Vertically Centered Masthead Content</h1>
+        <p class="lead">A great starter layout for a landing page</p>
       </div>
-   </div>
-</footer>
-<script src="./theme/js/jquery.min.js"></script>
+    </div>
+  </div>
+</header>
 
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="./theme/js/bootstrap.min.js"></script>
-
-<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-<script src="./theme/js/respond.min.js"></script>
-
-    <script src="./theme/js/bodypadding.js"></script>
-
-
+<!-- Page Content -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="font-weight-light">Page Content</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat reprehenderit expedita.</p>
+  </div>
+</section>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
