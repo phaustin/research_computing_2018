@@ -8,3 +8,6 @@
 *.pid
 *.ipynb_checkpoints
 output
+output_bs3
+output_next
+pelican-plugins
