@@ -186,7 +186,7 @@ figure.floatcenter, .align-center {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
     display: inline;
     float: left;
-    max-width: 600px;
+    max-width: 6000px;
     padding: 20px;
     position: relative;
     z-index: 1;

@@ -49,6 +49,7 @@ DEFAULT_PAGINATION = False
 THEME = './themes/pelican-bootstrap4'
 THEME = './themes/pelican-bootstrap3'
 THEME = './themes/bootstrap-next'
+THEME = './themes/pelican-bootstrap4_eos'
 BOOTSTRAP_THEME = 'lumen'
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 PLUGIN_PATHS = ['./pelican-plugins', './plugins']
