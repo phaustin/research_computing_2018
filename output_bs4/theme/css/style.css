@@ -191,7 +191,7 @@ figure.floatcenter, .align-center {
     display: inline;
     float: left;
     max-width: 6000px;
-    padding: 200px;
+    padding: 20px;
     position: relative;
     z-index: 1;
 }
