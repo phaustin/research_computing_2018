@@ -71,7 +71,6 @@
         <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/typogrify.css" rel="stylesheet">
     {% endif %}
         <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/style.css" type="text/css"/>
-        pha -- debug href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/style.css
     {% if CUSTOM_CSS %}
         <link href="{{ SITEURL }}/{{ CUSTOM_CSS }}" rel="stylesheet">
     {% endif %}
@@ -99,12 +98,20 @@
               title="{{ SITENAME }} {{ category }} ATOM Feed"/>
     {% endif %}
 
+<!-- play with padding on navbar -->
+<style>
+.padleft{
+    padding: 0 0 0 0rem
+}
+</style>
+
 </head>
 <body>
 
+<div class="container">  
 <nav class="navbar navbar-light bg-light navbar-expand-md fixed-top" role="navigation">
             {% if MENUITEMS or (pages and DISPLAY_PAGES_ON_MENU) or (categories and DISPLAY_CATEGORIES_ON_MENU) %}
-            <button type="button" class="navbar-toggle  navbar-toggler-left" data-toggle="collapse" data-target=".navbar-ex1-collapse" aria-label="Toggle navigation">
+            <button type="button" class="navbar-toggler  navbar-toggler-left" data-toggle="collapse" data-target=".navbar-ex1-collapse" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
             </button>
             {% endif %}
@@ -152,12 +159,14 @@
         </div>
         <!-- /.navbar-collapse -->
 </nav> <!-- /.navbar -->
+</div>
 <!-- Banner -->
 {% if BANNER and BANNER_ALL_PAGES %}
     {% include 'includes/banner.html' %}
 {% elif BANNER and not BANNER_ALL_PAGES %}
     {% block banner %}{% endblock %}
 {% endif %}
+
 <!-- End Banner -->
 <div class="container">
     <div class="row">
