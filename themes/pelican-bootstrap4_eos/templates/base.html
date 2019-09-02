@@ -70,7 +70,8 @@
     {% if TYPOGRIFY %}
         <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/typogrify.css" rel="stylesheet">
     {% endif %}
-    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/style.css" type="text/css"/>
+        pha -- debug href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/style.css
     {% if CUSTOM_CSS %}
         <link href="{{ SITEURL }}/{{ CUSTOM_CSS }}" rel="stylesheet">
     {% endif %}
@@ -109,20 +110,20 @@
             {% endif %}
             <a href="{{ SITEURL }}/" class="navbar-brand">
                 {% if SITELOGO %}<img class="img-responsive pull-left gap-right" src="{{ SITEURL }}/{{ SITELOGO }}" width="{{ SITELOGO_SIZE }}"/> {% endif %}
-                {% if not HIDE_SITENAME %}{{ SITENAME }} pha debug {% endif %}
+                {% if not HIDE_SITENAME %}<span class="padleft">{{ SITENAME }}</span>  {% endif %}
             </a>
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
                 {% for title, link in MENUITEMS %}
-                    <li class="nav-item"><a href="{{ link }}" class="nav-link">{{ title }}</a></li>
+                <li class="nav-item"><a href="{{ link }}" class="nav-link">{{ title }}</a></li>
                 {% endfor %}
                 {% if not PAGES_SORT_ATTRIBUTE -%}
                     {% set PAGES_SORT_ATTRIBUTE = 'title' %}
                 {%- endif %}
                 {% if DISPLAY_PAGES_ON_MENU %}
-                    {% for p in pages | sort(attribute=PAGES_SORT_ATTRIBUTE) %}
+                {% for p in pages | sort(attribute=PAGES_SORT_ATTRIBUTE) %}
                         {% if p.url %}
-                         <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">
+                         <li class="navbar-nav" {% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}" class="nav-link">
                              {{ p.menulabel|default(p.title) }}
                           </a></li>
                         {% endif %}
@@ -130,8 +131,8 @@
                 {% endif %}
                 {% if DISPLAY_CATEGORIES_ON_MENU %}
                     {% for cat, null in categories %}
-                        <li {% if cat == category %}class="active"{% endif %}>
-                            <a href="{{ SITEURL }}/{{ cat.url }}">{{ cat | capitalize }}</a>
+                        <li class="navbar-nav" {% if cat == category %}class="active"{% endif %}>
+                            <a href="{{ SITEURL }}/{{ cat.url }}" class="nav-link">{{ cat | capitalize }}</a>
                         </li>
                     {% endfor %}
                 {% endif %}
